@@ -28,12 +28,14 @@ How to use? ::
 
     from pyatom import AtomFeed
     import datetime
-
+    
+    #An id is required in order to make the AtomFeed
     feed = AtomFeed(title="My Blog",
                     subtitle="My example blog for a feed test.",
                     feed_url="http://example.org/feed",
                     url="http://example.org",
-                    author="Me")
+                    author="Me",
+                    id="feed")
 
     # Do this for each feed entry
     feed.add(title="My Post",
